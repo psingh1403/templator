@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=lato:400,700');
+body{
+  background-image: url('devices.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  /*overflow-x: hidden;*/
+  /*font-family: 'Lato', sans-serif;*/
+  /*color: rgb(120, 120, 120);*/
+  /*background-color: rgb(0, 0, 0);*/
+}
+
+.nav-color{
+	background-color: rgba(60, 60, 60,0.9);
+}
+
+.navbar h1:hover{
+	color: rgb(104, 255, 255);
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgba(104, 255, 255);
+  border-bottom: 3px solid rgb(104, 255, 255);
+  border-top: 3px solid rgb(104, 255, 255);
+}
+
+/*templates section start*/
+.templates{
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+.line-hr{
+  border-top: 3px solid rgb(104, 255, 255);
+}
+
+/*search box code*/
+.search-box{
+  position: relative;
+  transition: .5s;
+  width: 500px;
+}
+
+.container h1{
+  color: white;
+}
+
+input[type="text"]{
+  border: 0;
+  background: none;
+  width: 380px;
+  height: 40px;
+  outline: none;
+  padding: 0 16px;
+  border-radius: 25px 0 0 25px;
+  border: 3px solid rgb(104, 255, 255);
+  color: white;
+  /*border-bottom: 3px solid rgb(104, 255, 255);*/
+}
+
+input[type="submit"]{
+  border-radius: 0 25px 25px 0;
+  width: 90px;
+  height: 40px;
+  outline: none;
+  border: 3px solid rgb(104, 255, 255);
+  cursor: pointer;
+  color: white;
+  background: none; /*rgb(104, 255, 255)*/
+}
+
+input[type="submit"]:hover{
+  color: black;
+  background: white;
+}
+
+::placeholder{
+  color: white;
+}
+
+
+/*start footer section*/
+.footer{
+  padding: 90px;
+  background-color:rgb(60, 60, 60);
+  color: white;
+  margin-bottom: 0;
+}
+
+.footer .coloo{
+  color: white;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.footer .colo2{
+  font-size: 60px;
+}
+.footer .coloo:hover{
+  color: rgb(33, 229, 208);
+}

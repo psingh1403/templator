@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=lato:400,700');
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  /*color: rgb(120, 120, 120);*/
+  /*background-color: rgb(120, 120, 120);*/
+  margin-right: 0;
+}
+
+.nav-color{
+	background-color:rgba(60, 60, 60,0.9);
+}
+
+.navbar h1{
+  padding-left: 60px;
+}
+
+.navbar h1:hover{
+	color: rgb(104, 255, 255);
+}
+.navbar-nav li{
+  padding-right: .7rem;
+  font-size: 14px;
+
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgba(104, 255, 255);
+  border-bottom: 3px solid rgb(104, 255, 255);
+  border-top: 3px solid rgb(104, 255, 255);
+}
+
+
+/*.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(37, 29, 30,0.6)!important;
+
+}
+
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #1ebba3;
+}
+
+
+.navbarnavbar{
+	background-color: rgba(37, 29, 30,0.7);
+}
+*/
+
+/*header containt section*/
+.landing-page{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: table;
+	z-index: -1;
+}
+
+.home1{
+	clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home2{
+	background-image: url(background1.jpg);
+  opacity: 0.5;
+}
+
+.home2{
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.caption{
+	width: 100%;
+	word-spacing: 4px;
+	letter-spacing: 2px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 40%;
+  color: white;
+  z-index: 1;
+
+}
+
+.caption h1{
+  font-size: 65px;
+  font-weight: bolder;
+  color: rgb(33, 229, 208); /*43, 45, 51*/
+}
+
+.caption a{
+  color: white;
+  padding-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*.caption */
+.caption-ico a{
+  color: rgb(33, 229, 208);
+  padding: 10px;
+}
+
+/*.caption */
+.caption-ico-in:hover{
+  color: black; 
+}
+
+.caption .btn{
+  color: rgb(33, 229, 208);
+  border: 2px solid rgb(33, 229, 208);
+  margin-top: 25px;
+}
+
+.caption .btn:hover{
+  color: black;
+  background: rgb(33, 229, 208);
+}
+/*.dark{
+  background-color: rgba(0,0,0,0.55);
+  color: white;
+  padding: 246px 10px;
+}
+*/
+/*how it works section*/
+.work{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: rgb(153, 182, 180);
+}
+
+
+.workcon{
+	padding-top: 40px;
+	padding-left: 30px;
+	/*padding-right: 30px;*/
+  display: block;
+}
+
+.ico{
+  font-size: 80px;
+}
+
+/*start template section */
+.work1{
+	padding-top: 80px;
+	padding-bottom: 80px;
+  background-color: rgb(2, 139, 133);
+}
+
+/*technology section*/
+.section-2 .container-fluid{
+	background-image: url('devices.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	color: rgb(104, 255, 255);
+	padding-top: 80px;
+	padding-bottom: 130px;
+
+}
+
+.section-2 .container-fluid h1{ 
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.section-2 .container-fluid h3{
+  text-decoration: underline;
+  margin-top: 30px;
+}
+
+.section-2 .tech-ico{
+  margin-top: 20px;
+}
+
+.section-2 .container-fluid p{
+  /*text-align: justify;*/
+  margin: 20px;
+  padding-top: 30px;
+  /*color: white;*/
+}
+
+/*start about section*/
+.about-me{
+	background: rgb(2, 139, 133);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-me h1{
+  margin-bottom: 40px;
+}
+
+.about-me p{
+  margin-bottom: 40px;
+}
+
+.about-me .mar-left{
+  margin-left: 110px;
+}
+
+.about-me .mar-right{
+  margin-left: 320px;
+}
+
+
+/*start footer section*/
+.footer{
+	padding: 90px;
+	background-color:rgb(60, 60, 60);
+	color: white;
+  margin-bottom: 0;
+}
+
+.footer .coloo{
+  color: white;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.footer .colo2{
+  font-size: 60px;
+}
+.footer .coloo:hover{
+  color: rgb(33, 229, 208);
+}
+
+/*start media queries*/
+
+@media only screen and (min-width: 1200px){
+  .caption h1{
+  font-size: 65px;
+}
+
+.about-me .mar-left{
+  margin-right: 20px;
+  overflow-x: none;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+  .caption h1{
+  font-size: 60px;
+}
+.about-me .mar-left{
+  margin-right: 20px;
+}
+}
+
+@media only screen and (min-width: 768px){
+  .caption h1{
+  font-size: 55px;
+}
+.about-me .mar-left{
+  margin-right: 20px;
+}
+}
+
+@media only screen and (max-width: 600px){
+.caption h1{
+  font-size: 45px;
+}  
+
+.about-me .mar-left{
+  margin-left: 20px;
+}
+
+.about-me .mar-right{
+  margin-left: 20px;
+}
+
+}
+
+@media only screen and (min-width: 542px){
+.caption h1{
+  font-size: 35px;
+}
+}

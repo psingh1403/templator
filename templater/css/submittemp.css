@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=lato:400,700');
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+    /*background-image: url(devices.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /*background-color: black;*/
+}
+.nav-color{
+  background-color:rgba(60, 60, 60,0.9);
+}
+
+.navbar h1{
+  padding-left: 60px;
+}
+
+.navbar h1:hover{
+  color: rgb(104, 255, 255);
+}
+.navbar-nav li{
+  padding-right: .7rem;
+  font-size: 14px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgba(104, 255, 255);
+  border-bottom: 3px solid rgb(104, 255, 255);
+  border-top: 3px solid rgb(104, 255, 255);
+}
+
+
+
+/*start submit form section*/
+.sub-form{
+  margin-top: 150px;
+}
+
+.comp-form{
+  
+}
+
+/*check box css*/
+.box{
+  margin: auto;
+  padding: 50px;
+  /*background: rgb(60, 60, 60);#484848;*/
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: rgb(104, 255, 255);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*radio button code*/
+
+
+.ctgryrdo {
+  position: relative;
+  display: block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: #606062;
+  background-image: linear-gradient(#474749, #606062);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), inset 0 -1px 1px rgba(0,0,0,0.15);
+  transition: all 0.15s ease;
+}
+.ctgryrdo:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transform: scale(0);
+}
+.ctgryrdo + span {
+  float: left;
+  margin-left: 6px;
+  color: rgb(104, 255, 255);
+}
+.forms {
+  margin: auto;
+  user-select: none;
+}
+.forms label {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+.forms input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.forms input[type="radio"]:checked + .ctgryrdo {
+  background-color: #606062;
+  background-image: linear-gradient(#255cd2, #1d52c1);
+}
+.forms input[type="radio"]:checked + .ctgryrdo:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.15s ease;
+}
+
+
+/*multi-stem form code css*/
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  background: transparent;
+  padding: 10px;
+  width: 450px;
+  font-size: 17px;
+  font-family: Raleway;
+  color: white;
+  margin-top: 30px;
+  /*border-bottom: 2px solid #aaaaaa;*/
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  /*background-color: #ffdddd;*/
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.regForm .tab{
+  /*text-align: center;*/
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+
+button {
+  /*background-color: #4CAF50;*/
+  background: transparent;
+  color: rgb(2, 139, 133);
+  border: 2px solid rgb(2, 139, 133);
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 90px;
+  height: 40px;
+}
+
+/*button:hover {
+  opacity: 0.8;
+}
+*/
+#prevBtn {
+  /*background-color: #bbbbbb;*/
+  background: transparent;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 22px;
+  width: 22px;
+  margin: 0 10px 20px;
+  background-color: #bbbbbb;
+  font-size: 16px;
+  color: black;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  /*opacity: 0.5;*/
+}
+
+.step.active {
+  /*opacity: 1;*/
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: rgb(2, 139, 133);/*#4CAF50;*/
+}
+
+.sub-buttons{
+  overflow:auto;
+  text-align: center;
+}
+
+.form-cont{
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 80px;
+  border-radius: 6px;
+}
+
+textarea{
+  background: transparent;
+  margin-top: 5px;
+  color: white;
+}
+
+/*start footer section*/
+.footer{
+  padding: 90px;
+  background-color:rgb(60, 60, 60);
+  color: white;
+  margin-bottom: 0;
+}
+
+.footer .coloo{
+  color: white;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.footer .colo2{
+  font-size: 60px;
+}
+.footer .coloo:hover{
+  color: rgb(33, 229, 208);
+}
+
+
+
+/*start media queries*/
+
+/*@media only screen and (min-width: 1200px){
+  
+}
+
+@media only screen and (min-width: 992px){
+    
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (max-width: 600px){
+  .step {
+    height: 13px;
+    width: 13px;
+    margin: 0 3px 20px;
+    font-size: 9px;
+}
+*/
+  /*.form-cont{
+    width: 400px;
+    margin-left: 20px;
+  }*/
+
+/*}
+
+@media only screen and (min-width: 542px){
+    .step {
+    height: 22px;
+    width: 22px;
+    margin: 0 5px 20px;
+    background-color: #bbbbbb;
+    font-size: 16px;
+    color: black;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+*/    /*opacity: 0.5;*/
+/*  }
+}*/

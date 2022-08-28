@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=lato:400,700');
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+    /*background-image: url(devices.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /*background-color: black;*/
+}
+.nav-color{
+  background-color:rgba(60, 60, 60,0.9);
+}
+
+.navbar h1{
+  padding-left: 60px;
+}
+
+.navbar h1:hover{
+  color: rgb(104, 255, 255);
+}
+.navbar-nav li{
+  padding-right: .7rem;
+  font-size: 14px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgba(104, 255, 255);
+  border-bottom: 3px solid rgb(104, 255, 255);
+  border-top: 3px solid rgb(104, 255, 255);
+}
+
+/*start form section*/
+.form-container{
+  width: 370px;
+  height: 500px;
+  background: #000;
+  /*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+  color: #fff;
+  margin-top: 380px;
+  left: 50%;
+  /*margin-bottom: 200px;*/
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 40px 30px;
+  opacity: 0.8;
+  border-radius: 5px;
+
+  /*position: absolute;
+  margin-top: 130px;
+  margin-bottom: 110px;
+  background: none;
+  padding: 70px;
+  background-color: rgb(212, 218, 218);
+  border-radius: 15px;*/
+  /*box-shadow: 0px 0px 10px 0px #000;*/
+  /*border: 5px solid rgb(52, 73, 94);  /*rgb(104, 255, 255)*/*/
+  /*border-top: 3px solid rgb(104, 255, 255);*/
+}
+
+.form-container h1{
+  color: white;/*rgb(104, 255, 255);*/
+  /*margin-bottom: 25px;*/
+  margin: 5px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.form-container input[type="email"],.form-container input[type="password"]{
+  border: 0;
+  background:none;
+  display: block;
+  margin-bottom: 25px;
+  border-bottom: 3px solid rgb(104, 255, 255);
+  text-align: left;
+  color: white;
+  width: 310px; 
+  /*border: 2px solid rgb(52, 73, 94);*/
+  /*outline: none;*/
+}
+
+.form-container ::placeholder{
+  color: #fff;
+}
+
+.form-container a{
+  /*color: rgb(2, 139, 133);*/
+  text-decoration: none;
+}
+
+.create-account{
+  margin-left: 37px;
+}
+
+.account-links{
+  margin-top: 10px;
+}
+/*.btn{
+  border:0;
+  background:none;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+*/
+
+.form-container .btn1{
+  margin-top: 40px;
+}
+
+/*.btn:hover{
+  background-color: rgb(104, 255, 255);
+  color: black;
+}*/
+
+.form-container .for-pass{
+  margin-top: 10px;
+}
+
+.form-container .for-pass a{
+  margin-left: 50px;
+}
+
+.form-container .not-mam{
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*start footer section*/
+.footer{
+  padding: 90px;
+  background-color:rgb(60, 60, 60);
+  color: white;
+  margin-bottom: 0;
+  margin-top: 700px;
+}
+
+.footer .coloo{
+  color: white;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.footer .colo2{
+  font-size: 60px;
+}
+.footer .coloo:hover{
+  color: rgb(33, 229, 208);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footer{
+    /*margin-top: 50;   */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*@media only screen and (min-width: 600px) {
+  
+}
+*/
+/* Medium devices (landscape tablets, 768px and up) */
+/*@media only screen and (min-width: 768px) {
+
+} 
+*/
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {
+
+} 
+*/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {
+
+}
+*/
+
